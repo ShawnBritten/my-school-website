@@ -1,55 +1,37 @@
 <!DOCTYPE html>
-<html lang="end">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Puma</title>
   </head>
   <body>
     <header>
-      <h1>The About Page</h1>
+      <h1>Out Puma Vacation Website</h1>
     </header>
     <section>
-      <form method="POST" action="https://webdevbasics.net/scripts/demo.php">
-        <div>
-          <label for="myName">Name: </label>
-          <input type="text" name="myName" id="myName" />
-        </div>
-        <div>
-          <label for="myEmail">Email: </label>
-          <input type="text" name="myEmail" id="myEmail" />
-        </div>
-        Choose the browsers you use<br />
-        <div>
-          <input type="checkbox" name="go" value="yes" />
-          <label for="go">Google Chrome</label>
-        </div>
-        <div>
-          <input type="checkbox" name="firefox" value="yes" />
-          <label for="firefox">Firefox</label>
-        </div>
-        <div>
-          <input type="checkbox" name="edge" value="yes" />
-          <label for="edge">Microsoft Edge</label>
-        </div>
-        Would you like to be on our mailing list:<br />
-        <div>
-          <div>
-            <input type="radio" name="mailinglist" id="mailinglistyes" value="yes" />
-            <label for="mailinglistyes">Yes</label>
-          </div>
-          <div>
-            <input type="radio" name="mailinglist" id="mailinglistno" value="no" />
-            <label for="mailinglistno">No</label>
-          </div>
-        </div>
-        <div>
-          <span>Comments:</span>
-          <textarea></textarea>
-        </div>
-        <input type="submit" value="Submit" />
-        <input type="reset" />
-      </form>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./table.html">Table</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+      <div>
+      <video width="420" height="240" controls>
+        <source src="myMovie.mp4" type="video/mp4" />
+        Your browser does not support the video element
+      </video>
+      </div>
+      <div>
+      <audio controls>
+        <source src="mySound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element
+      </audio>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yaapnjOofXI?si=BZidq5pmzCLHabv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
+    <footer>
+      <p>Copyright 2026 Shawn Britten</p>
+    </footer>
   </body>
 </html>
