@@ -1,33 +1,59 @@
 <!DOCTYPE html>
+<html lang="end">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <title>Puma</title>
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <h1>Out Puma Vacation Website</h1>
-    </header>
-    <section>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./table.html">Table</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
-      </nav>
-      <video width="420" height="240" controls>
-        <source src="myMovie.mp4" type="video/mp4" />
-        Your browser does not support the video element
-      </video>
-      <audio controls>
-        <source src="mySound.mp3" type="audio/mpeg">
-        Your browser does not support the audio element
-      </audio>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yaapnjOofXI?si=BZidq5pmzCLHabv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    <footer>
-      <p>Copyright 2026 Shawn Britten</p>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>The About Page</h1>
+      </header>
+      <section>
+        <form method="POST" action="https://webdevbasics.net/scripts/demo.php">
+          <div class="mb-3">
+            <label for="myName" class="form-label">Name: </label>
+            <input type="text" name="myName" id="myName" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="myEmail" class="form-label">Email: </label>
+            <input type="text" name="myEmail" id="myEmail" class="form-control" />
+          </div>
+          Choose the browsers you use<br />
+          <div class="mb-3" form-check>
+            <input type="checkbox" name="go" value="yes" class="form-check-input" />
+            <label for="go" class="form-check-label">Google Chrome</label>
+          </div>
+          <div class="mb-3" form-check>
+            <input type="checkbox" name="firefox" value="yes" class="form-check-input" />
+            <label for="firefox" class="form-check-label">Firefox</label>
+          </div>
+          <div class="mb-3" form-check>
+            <input type="checkbox" name="edge" value="yes" class="form-check-input" />
+            <label for="edge" class="form-check-label">Microsoft Edge</label>
+          </div>
+          Would you like to be on our mailing list:<br />
+          <div class="mb-3">
+            <div form-check>
+              <input type="radio" name="mailinglist" id="mailinglistyes" value="yes" class="form-check-input" />
+              <label for="mailinglistyes" class="form-check-label">Yes</label>
+            </div>
+            <div form-check>
+              <input type="radio" name="mailinglist" id="mailinglistno" value="no" class="form-check-input" />
+              <label for="mailinglistno" class="form-check-label">No</label>
+            </div>
+          </div>
+          <div class="mb-3" input-group>
+            <span class="input-group-text">Your Comments:</span>
+            <textarea class="form-control" aria-label="Comments"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn bt-primary" />
+          <input type="reset" class="btn btn-secondary" />
+        </form>
+      </section>
+    </div>
   </body>
 </html>
